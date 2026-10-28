@@ -1,0 +1,13 @@
+{
+  "name": "aml-explorer",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Source-backed educational FLT3 AML scenario explorer",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "check": "node --check evidence.js && node --check engine.js && node --check app.js"
+  },
+  "engines": {"node": ">=20"},
+  "devDependencies": {"playwright": "1.62.1"}
+}
